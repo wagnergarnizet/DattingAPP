@@ -6,16 +6,16 @@ using Datting.API.Dtos;
 
 namespace Datting.API.Controllers
 {
-
-    [Route("api/[controller]")]
+   [Route("api/[controller]")]
     [ApiController]
-    public class AuthControllers: ControllerBase
+    public class AuthController: ControllerBase
     {
         private readonly IAuthRepository _repo;
-        public AuthControllers(IAuthRepository repo)
+        public AuthController(IAuthRepository repo)
         {
             _repo = repo;
         }
+
 
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
