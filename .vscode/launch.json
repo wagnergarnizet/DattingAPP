@@ -5,18 +5,13 @@
    "version": "0.2.0",
    "configurations": [
    {
-       "name": ".NET Core Attach",
-       "type": "coreclr",
+       "type": "chrome",
        "request": "attach",
-       "processId": "${command:pickProcess}"
+       "name": "Attach to Chrome",
+       "port": 9222,
+       "webRoot": "${workspaceFolder}"
    },
-   {
-       "name": ".NET Core Attach",
-       "type": "coreclr",
-       "request": "attach",
-       "processId": "${command:pickProcess}"
-   },
-   
+    
         {
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
